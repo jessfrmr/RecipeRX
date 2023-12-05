@@ -1,0 +1,1443 @@
+*{
+    margin:0;
+}
+body{
+    background-color: #FDF7EF;
+    font-family: "kulim park";
+    font-size: 17px;
+    color:#2D132F;
+    max-width:1200px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/*navigation*/
+header{
+    overflow: default;
+    display: block;
+    background-color: #BFE869;
+    width:100%;
+    height:90px;
+    position: fixed;
+    padding-top: 0%;
+    padding-bottom:0px;
+    position:fixed;
+    max-width:1200px;
+}
+
+.logo{
+    height:45px;
+    width: auto;
+    float: left;
+    padding-left: 20px;
+    padding-top:25px;
+
+}
+.login img{
+    height: 45px;
+    width: auto;
+    float:right;
+    margin-top:-10px;
+}
+.login img:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.login{
+    float:right;
+
+}
+nav{
+    float:right;
+    overflow: hidden;
+    padding-top:40px;
+    padding-right:20px;
+    
+}
+nav a{
+    color:#2D132F;
+    text-decoration: none;
+    font-family: "Kulim Park";
+    padding-right:40px;
+    
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.dropdown {
+    float: right;
+    overflow:hidden;
+    padding-right:20px;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: #2D132F;
+    background-color: inherit;
+    font-family: "kulim park";
+    margin: 0;
+    float:right;
+   
+  }
+ 
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #BFE869;
+  }
+  .dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #2D132F;
+    min-width: 160px;
+    text-decoration: none;
+
+  }
+  .dropdown-content a {
+    float: none;
+    color: #BFE869;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color:#2D132F;
+  }
+  .dropdown-content a:hover {
+    background-color: #BFE869;
+    color:#2D132F;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/*hero*/
+h1{
+    font-size: 60px;
+    color:#2D132F;
+}
+
+.hero{
+    display:flex;
+    height:800px;
+    
+}
+.text{
+    float: left;
+    width:50%;
+}
+.text h1{
+    margin-bottom:20px;
+    width:70%;
+    font-size: 60px;
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-right:100px;
+    padding-bottom:60px;
+}
+#rectangle{
+    width:80px;
+    height:30px;
+    background:#BFE869;
+    margin-left:100px;
+}
+.text p{
+  padding-left: 100px;
+  font-size: 18px;
+  display:flex;
+  padding-top:150px;
+  width:230px;
+}
+.hero_img{
+    width:50%;
+    float:right;
+    object-fit: cover;
+    background-image: url(images/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+/*sign up*/
+.signup{
+    background-color:#2D132F;
+    color:#FDF7EF;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 40px;
+    padding-top: 100px;
+}
+p{
+    font-family:"oswald";
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+.signup button{
+    font-family: "kulim park";
+    color:#39173C;
+    background-color:#BFE869;
+    width: 170px;
+    height: 50px;
+    border-radius: 4em;
+    font-size: 20px;
+    border-style: none;
+}
+.signup button:hover{
+    transform: scale(1.2);
+   transition: all .5s ease;
+}
+.signup p{
+    margin-top: 30px;
+}
+/*recipes by symptom*/
+.container{
+    height:600px;
+}
+.title{
+    text-align: center;
+    padding-bottom:50px;
+}
+.symptoms button{
+    font-family: "oswald";
+    color:#39173C;
+    background-color:#BFE869;
+    width: 200px;
+    height: 200px;
+    border-radius: 2em;
+    font-size: 25px;
+    border-style: none;
+}
+.head:hover button{
+    display: none;
+}
+.head img{
+    display:none;
+}
+.head:hover img{
+    display:block;
+    width:230px;
+    height:auto;
+    animation: shake 0.5s;
+}
+.nausea:hover button{
+    display: none;
+}
+.nausea img{
+    display:none;
+}
+.nausea:hover img{
+    display:block;
+    width:140px;
+    height:auto;
+    animation: shake 0.5s;
+}
+.fatigue:hover button{
+    display: none;
+}
+.fatigue img{
+    display:none;
+}
+.fatigue:hover img{
+    display:block;
+    width:200px;
+    height:auto;
+    animation: shake 0.5s;
+}
+.throat:hover button{
+    display: none;
+}
+.throat img{
+    display:none;
+}
+.throat:hover img{
+    display:block;
+    width:200px;
+    height:auto;
+    animation: shake 0.5s;
+}
+.congestion:hover button{
+    display: none;
+}
+.congestion img{
+    display:none;
+}
+.congestion:hover img{
+    display:block;
+    width:200px;
+    height:auto;
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    50% { transform: translate(1px, -1px) rotate(20deg); }
+    70% { transform: translate(3px, 1px) rotate(-20deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+  }
+.symptoms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*featured recipes*/
+.featured{
+    background-color:#2D132F;
+    color:#FDF7EF;
+    height:600px;
+}
+.featured h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.featured img{
+    height:300px;
+    width:25%;
+    display: inline;
+    object-fit: cover;
+    margin:0;
+    padding:0;
+    float:left;
+}
+
+
+/*wellness*/
+.well{
+    display: flex;
+    height:700px;
+}
+.well img{
+    width:50%;
+    object-fit: cover;
+    float:left;
+}
+.type{
+    float:left;
+    padding: 60px;
+    width:50%;
+}
+.well p{
+    margin-top:30px;
+}
+.well h2{
+    margin-top:30px;
+}
+.well button{
+    font-family: "kulim park";
+    color:#39173C;
+    background-color:#BFE869;
+    width: 170px;
+    height: 50px;
+    border-radius: 4em;
+    font-size: 20px;
+    border-style: none;
+    
+}
+
+.well button:hover{
+   transform: scale(1.2);
+   transition: all .5s ease;
+}
+.find{
+    flex-direction: column;
+    padding-top: 20px;
+}
+/*footer*/
+.footer-background{
+    background-color:#BFE869;
+    width:100%;
+    display:block;
+}
+footer{
+    background-color:#BFE869;
+    height:450px;
+    margin-bottom:0px;
+    overflow:hidden;
+    max-width:1200px;
+}
+footer img{
+    width:50px;
+    height: auto;
+    margin:0px;
+}
+.row_foot{
+    display:flex;
+    
+}
+.list{
+    display:flex;
+    flex-direction: column;
+}
+.logofoot{
+    width:300px;
+    height:auto;
+    padding:50px;
+}
+.socials{
+    float:right;
+    padding-right:30px;
+    margin-bottom:0px;
+    padding-bottom:100px;
+}
+ul{
+    list-style:none;
+    padding-left:50px;
+}
+.links a{
+    color:#2D132F;
+    text-decoration:none;
+    padding-left:150px;
+    padding-top: 20px;
+    padding-bottom:40px;
+}
+.links a:hover{
+    text-decoration: underline;
+
+}
+.links{
+   display:flex;
+   flex-direction: row;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+}
+.column2{
+    display:flex;
+    flex-direction: column;
+}
+/*about page*/
+.about_hero{
+    text-align: center;
+    height: 600px;
+}
+.about_hero h1{
+    margin:0;
+    padding-top:250px;
+}
+.about_hero p{
+    font-size: 27px;
+    padding-top: 5px;
+}
+.feeling_better{
+    display: flex;
+    height:700px;
+    background-color:#2D132F;
+    color:#FDF7EF;
+}
+.feeling_better img{
+    max-width:50%;
+    object-fit: cover;
+}
+.fb_text{
+    float:right;
+    padding: 60px;
+    max-width:40%;
+}
+.feeling_better h2{
+    color:#BFE869;
+    line-height: 50px;
+    width:300px;
+    margin-bottom:30px;
+}
+#rectangle2{
+    width:60px;
+    height:20px;
+    background:#FDF7EF;
+    margin-left:0px;
+    margin-bottom: 25px;
+}
+.feeling_better p{
+    font-size: 18px;
+    width:370px;
+    padding-right:50px;
+}
+.quote{
+    background-color:#BFE869;
+    color:#2D132F;
+    height:700px;
+    text-align:center;
+    height:600px;
+}
+.quote h2{
+    font-size: 70px;
+    text-align: center;
+    padding:100px;
+    padding-bottom:0;
+    padding-top:200px;
+}
+.quote p{
+    margin-top: 40px;
+}
+.food_bg{
+    background-image: url(images/about_landscape2.jpeg);
+    width:100%;
+    height:500px;
+    object-fit:contain;
+    background-position:top right;
+}
+/*headache page*/
+h5{
+    font-size:30px;
+    font-family: oswald;
+    padding-top:50px;
+    margin-top:50px;
+}
+h6{
+    font-size: 23px;
+    font-family:oswald;
+    text-align: left;
+    margin-top:20px;
+    margin-bottom:10px;
+    padding-left:150px;
+}
+.headache_hero{
+    height:550px;
+}
+
+.headache_hero p{
+    padding-left:100px;
+    width: 20%;
+    padding-top: 100px;
+}
+.headache_hero h1{
+    padding-top:200px;
+    padding-left: 100px;
+    margin:0;
+}
+#rectangle3{
+    width:80px;
+    height:30px;
+    background:#BFE869;
+    margin-left:100px;
+    margin-top: 40px;
+}
+
+.intro{
+    background-color:#2D132F;
+    color:#FDF7EF;
+    text-align: center;
+    height:400px;
+}
+.intro p{
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+    font-family:"oswald";
+    line-height: 30px;
+    margin-top:30px;
+}
+h3{
+    font-family:"oswald";
+    font-size: 60px;
+    width:500px;
+    text-align:center;
+}
+.spinach{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+
+.recipe1 h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.recipe1 p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.recipe1{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.recipe1_title:hover{
+display:none;
+}
+.recipe1_directions{
+    display:none;
+    overflow:hidden;
+}
+.recipe1_title:hover+.recipe1_directions{
+        display:block;
+        background-color:#FDF7EF;
+        height:700px;
+        width: 100%;
+        color:#2D132F;
+        font-family:kulim park;
+    }
+
+.parallax1{
+    width:50%;
+    height:100%;
+    margin:auto;
+}
+.berry{
+    display: flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.recipe2_title:hover{
+display:none;
+}
+
+.berry_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+ul {
+    text-align:left;
+    padding-left:150px;
+    line-height:25px;
+}
+ol{
+    text-align:left;
+    width:60%;
+    line-height: 20px;
+    margin-bottom:20px;
+    margin-top:0px;
+    padding-left:150px;
+
+}
+.recipe2_title:hover+.berry_directions{
+    display:block;
+    background-color:#FDF7EF;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    font-family:kulim park;
+}
+/********/
+
+.recipe2{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.recipe2 h3{
+    
+    margin:0 auto;
+    text-align: center;
+    width:100%;
+    padding-top:160px;
+    padding-bottom:50px;
+}
+.recipe2 p{
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+}
+.parallax2{
+    width:600px;
+    height:700px;
+}
+.tea{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.recipe3{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.recipe3 h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.recipe3 p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.recipe3_title:hover{
+    display:none;
+}
+.recipe3_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.recipe3_title:hover+.recipe3_directions{
+    display:block;
+    background-color:#FDF7EF;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+}
+.parallax3{
+    width:50%;
+    height:700;
+}
+.spotlight{
+    background-color:#2D132F;
+    color:#FDF7EF;
+    height:600px;
+    display:flex;
+    flex-direction:row;
+}
+.spotlight h4{
+    color:#BFE869;
+    font-size: 30px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.watermelon{
+    width:35%;
+    display:flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.melon_img{
+    background-image: url(images/watermelon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit:cover;
+    width:50%;
+    height:600px;
+}
+/*nausea page*/
+.ginger_tea{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.ginger_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.ginger_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.ginger_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.ginger_title:hover{
+    display:none;
+}
+.ginger_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.ginger_title:hover+.ginger_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.ginger_parallax{
+    
+    width:50%;
+    height:700;
+    
+}
+.sweet_potato{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.sweet_potato_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.sweet_potato_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.sweet_potato_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.sweet_title:hover{
+    display:none;
+}
+.sweet_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.sweet_title:hover+.sweet_directions{
+    display:block;
+    background-color:#FDF7EF;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+}
+.sweet_potato_parallax{
+    
+    width:50%;
+    height:700;
+   
+}
+.rice{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.rice_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.rice_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.rice_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.rice_title:hover{
+    display:none;
+}
+.rice_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.rice_title:hover+.rice_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.rice_parallax{
+    
+    width:50%;
+    height:700;
+   
+}
+.ginger_img{
+    background-image: url(images/ginger_root.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit:cover;
+    width:50%;
+    height:600px;
+}
+/*fatigue page*/
+.chickpea{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.chickpea_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.chickpea_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.chickpea_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.chickpea_title:hover{
+    display:none;
+}
+.chickpea_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.chickpea_title:hover+.chickpea_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.chickpea_parallax{
+    
+    width:50%;
+    height:700;
+     
+}
+.green_smoothie{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.green_smoothie_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.green_smoothie_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.green_smoothie_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.green_title:hover{
+    display:none;
+}
+.green_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.green_title:hover+.green_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.green_smoothie_parallax{
+  
+    width:50%;
+    height:700;
+  
+}
+.salmon{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.salmon_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.salmon_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.salmon_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.salmon_title:hover{
+    display:none;
+}
+.salmon_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.salmon_title:hover+.salmon_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.salmon_parallax{
+   
+    width:50%;
+    height:700;
+   
+}
+.spinach_img{
+    background-image: url(images/spinach_spotlight.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit:cover;
+    width:50%;
+    height:600px;
+}
+/*sore throat page*/
+.lavender_tea{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.lavender_tea_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.lavender_tea_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.lavender_tea_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.lavender_title:hover{
+    display:none;
+}
+.lavender_directions{
+    display:none;
+   overflow:hidden;
+}
+.lavender_title:hover+.lavender_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.lavender_tea_parallax{
+    width:50%;
+    height:700;
+     
+}
+.carrot{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.carrot_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.carrot_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.carrot_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.carrot_title:hover{
+    display:none;
+}
+.carrot_directions{
+    display:none;
+   overflow:hidden;
+}
+.carrot_title:hover+.carrot_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.carrot_parallax{
+    width:50%;
+    height:700;
+
+}
+.butternut{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.butternut_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.butternut_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.butternut_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.butternut_title:hover{
+    display:none;
+}
+.butternut_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.butternut_title:hover+.butternut_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.butternut_parallax{
+    width:50%;
+    height:700;
+}
+.honey_img{
+    background-image: url(images/honey.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit:cover;
+    width:50%;
+    height:600px;
+}
+/*congestion page*/
+.hotnsour{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.hotnsour_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.hotnsour_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.hotnsour_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.shrimp_title:hover{
+    display:none;
+}
+.shrimp_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.shrimp_title:hover+.shrimp_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.hotnsour_parallax{
+    width:50%;
+    height:700;
+}
+.miso{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.miso_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.miso_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.miso_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.miso_title:hover{
+    display:none;
+}
+.miso_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.miso_title:hover+.miso_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.miso_parallax{
+    width:50%;
+    height:700;
+}
+.chicken{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.chicken_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.chicken_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.chicken_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.chicken_title:hover{
+    display:none;
+}
+.chicken_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.chicken_title:hover+.chicken_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.chicken_parallax{
+    width:50%;
+    height:700;
+}
+.chili_img{
+    background-image: url(images/chili.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit:cover;
+    width:50%;
+    height:600px;
+}
+/*wellness page*/
+.rainbow{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.rainbow_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.rainbow_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.rainbow_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.rainbow_title:hover{
+    display:none;
+}
+.rainbow_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.rainbow_title:hover+.rainbow_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.rainbow_parallax{
+    background-image: url(images/rainbow.jpeg);
+    width:50%;
+    height:700;
+    object-fit:cover;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:right; 
+}
+.lemon_herb{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.lemon_herb_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.lemon_herb_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.lemon_herb_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.lemonchicken_title:hover{
+    display:none;
+}
+.lemonchicken_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.lemonchicken_title:hover+.lemonchicken_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.lemon_herb_parallax{
+    background-image: url(images/lemon_herb.jpeg);
+    width:50%;
+    height:700;
+    object-fit:cover;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:right; 
+}
+.tuna{
+    display:flex;
+    height:700px;
+    background-color:#BFE869;
+    width:100%;
+}
+.tuna_recipe{
+    text-align: center;
+    justify-items:center;
+    width:50%;
+}
+.tuna_recipe h3{
+    padding:50px;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding-top:160px;
+}
+.tuna_recipe p{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.tuna_title:hover{
+    display:none;
+}
+.tuna_directions{
+    display:none;
+    background-color:#FDF7EF;
+    color:#2D132F;
+    overflow:hidden;
+}
+.tuna_title:hover+.tuna_directions{
+    display:block;
+    height:700px;
+    width: 100%;
+    color:#2D132F;
+    background-color:#FDF7EF;
+}
+.tuna_parallax{
+    background-image: url(images/ahi_tuna.jpeg);
+    width:50%;
+    height:700;
+    object-fit:cover;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:right; 
+}
+.blueberries_img{
+    background-image: url(images/blueberries.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit:cover;
+    width:50%;
+    height:600px;
+}
